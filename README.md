@@ -12,5 +12,5 @@ websave('Replay_Donkeycar_Simulink.mlx','https://github.com/covao/Replay_DonkeyC
 open('donkeycar_replay.mdl');
 
 ```
-MATLAB live script file [train_donkeycar_dl_model.mlx](https://github.com/covao/Replay_DonkeyCar_Simulink/raw/main/Replay_Donkeycar_Simulink.mlx)  
+MATLAB live script file [Replay_Donkeycar_Simulink.mlx](https://github.com/covao/Replay_DonkeyCar_Simulink/blob/main/Replay_Donkeycar_Simulink.mlx)  
 
