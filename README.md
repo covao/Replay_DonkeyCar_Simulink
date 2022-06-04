@@ -3,10 +3,6 @@
 
 Example of DoneyCar's Dataset Replay and Prediction by deep learning model
 
-![donkeycar_replay_model](img/donkeycar_replay_simulink.jpg)  
-
-![donkeycar_replay_video](img/donkey_video.gif)  
-
 ## MATLAB command to download and open the demo (MATLAB live script)
 ```
 mkdir('./donkeycar_demo');
@@ -18,3 +14,6 @@ open('Replay_Donkeycar_Simulink.mlx');
 ```
 MATLAB live script file [Replay_Donkeycar_Simulink.mlx](https://github.com/covao/Replay_DonkeyCar_Simulink/blob/main/Replay_Donkeycar_Simulink.mlx)  
 
+![donkeycar_replay_model](img/donkeycar_replay_simulink.jpg)  
+
+![donkeycar_replay_video](img/donkey_video.gif)  
