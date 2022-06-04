@@ -1,7 +1,11 @@
 [![View DonkeyCar's Dataset Replay using MATLAB/Simulink on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://jp.mathworks.com/matlabcentral/fileexchange/112655-donkeycar-s-dataset-replay-using-matlab-simulink)
 # DonkeyCar's Dataset Replay using MATLAB/Simulink
 
-Sample code to load the DonkeyCar training dataset and try training a deep learning model.
+Example of DoneyCar's Dataset Replay and Prediction by deep learning model
+
+![donkeycar_replay_model](img/donkeycar_replay_simulink.jpg)  
+
+![donkeycar_replay_video](img/donkey_video.gif)  
 
 ## MATLAB command to download and open the demo (MATLAB live script)
 ```
