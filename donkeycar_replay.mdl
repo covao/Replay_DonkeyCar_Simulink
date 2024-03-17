@@ -2,12 +2,12 @@ Model {
   Name			  "donkeycar_replay"
   Version		  10.3
   SavedCharacterEncoding  "Shift_JIS"
-  ModelUUID		  "d1aea1fb-48a7-4e66-8211-0e9e4b3db6fc"
+  ModelUUID		  "0bb6d249-ff5a-40bd-ac40-92e69939e6e9"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2"
+    ComputedModelVersion    "6.2"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -19,7 +19,7 @@ Model {
     IsExportFunctionModel   0
     SimulinkSubDomainType   "Simulink"
     NumParameterArguments   0
-    NumExternalFileReferences 3
+    NumExternalFileReferences 2
     ExternalFileReference {
       Reference		      "deeplib/Predict"
       Path		      "donkeycar_replay/Predict"
@@ -32,14 +32,9 @@ Model {
       SID		      "9"
       Type		      "LIBRARY_BLOCK"
     }
-    ExternalFileReference {
-      Reference		      "matrix_library/Transpose"
-      Path		      "donkeycar_replay/Transpose2"
-      SID		      "16"
-      Type		      "LIBRARY_BLOCK"
-    }
     OrderedModelArguments   1
   }
+  SimscapeDaeAutoSolver	  "ode23t"
   EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -85,10 +80,10 @@ Model {
 	IsTabbed		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1703.0, 915.0]
-	ZoomFactor		[1.1103370786516855]
-	Offset			[32.391216352964989, -6.0185185185185048]
-	SceneRectInView		[32.391216352964989, -6.0185185185185048, 766.88423396073665, 412.037037037037]
+	Extents			[1704.0, 916.0]
+	ZoomFactor		[1.1120107962213226]
+	Offset			[32.410194174757294, -5.933252427184442]
+	SceneRectInView		[32.410194174757294, -5.933252427184442, 766.17961165048541, 411.86650485436888]
       }
       Array {
 	Type			"Simulink.DockComponentInfo"
@@ -127,7 +122,7 @@ Model {
       "ABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZ"
       "QBzAAAAAAD/////AAABBQD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAd"
       "ABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAA1QA////AAAAAwAAAAAAAAAA/AEAAAAB+/////8AA"
-      "AAAAP////8AAAKuAP///wAABu0AAAPzAAAAAQAAAAIAAAABAAAAAvwAAAADAAAAAAAAAAEAAAA2AGMAbwBsAGwAYQBwAHMAaQBiAGwAZQBQAGEAb"
+      "AAAAP////8AAAKuAP///wAABu4AAAP0AAAAAQAAAAIAAAABAAAAAvwAAAADAAAAAAAAAAEAAAA2AGMAbwBsAGwAYQBwAHMAaQBiAGwAZQBQAGEAb"
       "gBlAGwAVABvAG8AbABCAGEAcgBMAGUAZgB0AwAAAAD/////AAAAAAAAAAAAAAABAAAAAQAAADgAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuA"
       "GUAbABUAG8AbwBsAEIAYQByAFIAaQBnAGgAdAMAAAAA/////wAAAAAAAAAAAAAAAwAAAAEAAAA6AGMAbwBsAGwAYQBwAHMAaQBiAGwAZQBQAGEAb"
       "gBlAGwAVABvAG8AbABCAGEAcgBCAG8AdAB0AG8AbQAAAAAA/////wAAAAAAAAAA"
@@ -138,7 +133,7 @@ Model {
       }
       WindowUuid	      "43a7fe24-6618-44b7-a6c4-7acfaa3515db"
     }
-    BDUuid		    "7125d9af-be55-427f-95da-5451cfa421a9"
+    BDUuid		    "101f9ab3-93ae-4e7c-880b-0ccea0f790a7"
   }
   HideAutomaticNames	  on
   SequenceViewerTimePrecision 3
@@ -148,8 +143,8 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "kkoic"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Mar 17 23:10:12 2024"
-  ModelVersionFormat	  "%<AutoIncrement:1.0>"
+  LastModifiedDate	  "Mon Mar 18 00:01:03 2024"
+  ModelVersionFormat	  "%<AutoIncrement:2.0>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -194,7 +189,7 @@ Model {
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
-  EnablePacing		  off
+  EnablePacing		  on
   PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
@@ -289,7 +284,7 @@ Model {
 	  ShapePreserveControl	  "DisableAll"
 	  ZeroCrossControl	  "UseLocalSettings"
 	  ZeroCrossAlgorithm	  "Nonadaptive"
-	  AlgebraicLoopSolver	  "Auto"
+	  AlgebraicLoopSolver	  "TrustRegion"
 	  SolverInfoToggleStatus  on
 	  IsAutoAppliedInSIP	  off
 	  SolverResetMethod	  "Fast"
@@ -759,7 +754,7 @@ Model {
 	  GPUMaximumBlocksPerKernel 0
 	  DLTargetLibrary	  "none"
 	  DLAutoTuning		  on
-	  DLArmComputeVersion	  "20.02.1"
+	  DLArmComputeVersion	  "19.05"
 	  DLArmComputeArch	  "unspecified"
 	  Array {
 	    Type		    "Handle"
@@ -1160,7 +1155,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "111"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "20"
+    SIDHighWatermark	    "34"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      FromWorkspace
@@ -1328,7 +1323,7 @@ Model {
       ".274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.07450980392"
       "15686 0.650980392156863]),'DisplayLayoutDimensions',[2 1],'DisplayContentCache',[]),extmgr.Configuration('Tools'"
       ",'Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2023a'))"
-      ",'Version','2023a','Position',[781 84 560 420],'VisibleAtModelOpen','on')"
+      ",'Version','2023a','Position',[781 84 560 420])"
       NumInputPorts	      "2"
       Floating		      off
     }
@@ -1341,7 +1336,7 @@ Model {
       ZOrder		      469
       NumberOfDimensions      "3"
       InputPortWidth	      "3"
-      IndexOptions	      "Index vector (dialog),Index vector (dialog),Index vector (dialog)"
+      IndexOptions	      "Select all,Select all,Index vector (dialog)"
       Indices		      "-1,-1,1"
       OutputSizes	      "1,1,1"
     }
@@ -1354,7 +1349,7 @@ Model {
       ZOrder		      470
       NumberOfDimensions      "3"
       InputPortWidth	      "3"
-      IndexOptions	      "Index vector (dialog),Index vector (dialog),Index vector (dialog)"
+      IndexOptions	      "Select all,Select all,Index vector (dialog)"
       Indices		      "-1,-1,2"
       OutputSizes	      "1,1,1"
     }
@@ -1367,35 +1362,36 @@ Model {
       ZOrder		      471
       NumberOfDimensions      "3"
       InputPortWidth	      "3"
-      IndexOptions	      "Index vector (dialog),Index vector (dialog),Index vector (dialog)"
+      IndexOptions	      "Select all,Select all,Index vector (dialog)"
       Indices		      "-1,-1,3"
       OutputSizes	      "1,1,1"
     }
     Block {
       BlockType		      Math
       Name		      "Transpose"
-      SID		      "19"
+      SID		      "28"
       Ports		      [1, 1]
-      Position		      [390, 125, 405, 145]
-      ZOrder		      484
+      Position		      [390, 150, 405, 170]
+      ZOrder		      491
       Operator		      "transpose"
     }
     Block {
-      BlockType		      Reference
-      Name		      "Transpose2"
-      SID		      "16"
+      BlockType		      Math
+      Name		      "Transpose1"
+      SID		      "30"
       Ports		      [1, 1]
       Position		      [390, 175, 405, 195]
-      ZOrder		      475
-      LibraryVersion	      "2.0"
-      SourceBlock	      "matrix_library/Transpose"
-      SourceType	      "Transpose"
-      RTWMemSecFuncInitTerm   "Inherit from model"
-      RTWMemSecFuncExecute    "Inherit from model"
-      RTWMemSecDataConstants  "Inherit from model"
-      RTWMemSecDataInternal   "Inherit from model"
-      RTWMemSecDataParameters "Inherit from model"
-      ContentPreviewEnabled   on
+      ZOrder		      492
+      Operator		      "transpose"
+    }
+    Block {
+      BlockType		      Math
+      Name		      "Transpose2"
+      SID		      "31"
+      Ports		      [1, 1]
+      Position		      [390, 125, 405, 145]
+      ZOrder		      493
+      Operator		      "transpose"
     }
     Line {
       ZOrder		      1
@@ -1467,8 +1463,8 @@ Model {
       DstPort		      2
     }
     Line {
-      ZOrder		      12
-      SrcBlock		      "Transpose2"
+      ZOrder		      53
+      SrcBlock		      "Transpose1"
       SrcPort		      1
       DstBlock		      "SDL Video Display"
       DstPort		      3
@@ -1490,14 +1486,8 @@ Model {
       DstPort		      2
     }
     Line {
-      ZOrder		      15
+      ZOrder		      41
       SrcBlock		      "Selector1"
-      SrcPort		      1
-      Points		      [70, 0]
-    }
-    Line {
-      ZOrder		      16
-      SrcBlock		      "Selector"
       SrcPort		      1
       DstBlock		      "Transpose"
       DstPort		      1
@@ -1519,24 +1509,32 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      19
-      SrcBlock		      "Transpose"
-      SrcPort		      1
-      DstBlock		      "SDL Video Display"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      20
-      SrcBlock		      "Selector2"
+      ZOrder		      56
+      SrcBlock		      "Selector"
       SrcPort		      1
       DstBlock		      "Transpose2"
       DstPort		      1
     }
     Line {
-      ZOrder		      21
-      Points		      [410, 160]
+      ZOrder		      54
+      SrcBlock		      "Selector2"
+      SrcPort		      1
+      DstBlock		      "Transpose1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      42
+      SrcBlock		      "Transpose"
+      SrcPort		      1
       DstBlock		      "SDL Video Display"
       DstPort		      2
+    }
+    Line {
+      ZOrder		      55
+      SrcBlock		      "Transpose2"
+      SrcPort		      1
+      DstBlock		      "SDL Video Display"
+      DstPort		      1
     }
     Annotation {
       SID		      "17"
